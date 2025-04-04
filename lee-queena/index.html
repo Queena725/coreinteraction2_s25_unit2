@@ -3,77 +3,87 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Queen</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <title>Queena Lee</title>
+  <link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Inter:wght@100..900&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      background: black;
+      background-color: black;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       height: 100vh;
-      font-family: 'Inter', sans-serif;
+      overflow: hidden;
     }
 
-    .name-container {
+    .name-line {
       display: flex;
-      gap: 0.2em;
+      gap: 0.1em;
       flex-wrap: wrap;
       justify-content: center;
       align-items: center;
+      line-height: 1;
     }
 
     .letter {
-      font-variation-settings: "wght" 500;
-      color: pink;
-      font-size: 15vw;
+      font-size: 10vw;
+      color: white;
       transition: transform 0.3s ease, color 0.3s ease, font-variation-settings 0.3s ease;
       cursor: pointer;
     }
 
+    .ballet {
+      font-family: 'Ballet', cursive;
+      font-optical-sizing: auto;
+    }
+
+    .inter {
+      font-family: 'Inter', sans-serif;
+      font-variation-settings: "wght" 500;
+    }
+
     .letter:hover {
       transform: scale(1.2) rotate(-5deg);
-      color: #ff69b4;
-      font-variation-settings: "wght" 800;
+      color: #ddd;
+      font-variation-settings: "wght" 700;
     }
 
     .letter:active {
       transform: scale(0.9) rotate(5deg);
-      color: white;
+      color: gray;
       font-variation-settings: "wght" 300;
     }
 
     @media (max-width: 900px) {
-      .letter {
-        font-size: 12vw;
-      }
+      .letter { font-size: 8vw; }
     }
 
     @media (max-width: 650px) {
-      .letter {
-        font-size: 18vw;
-      }
+      .letter { font-size: 12vw; }
     }
 
     @media (max-width: 450px) {
-      .letter {
-        font-size: 22vw;
-      }
+      .letter { font-size: 16vw; }
     }
   </style>
 </head>
 <body>
-  <div class="name-container">
-    <span class="letter">Q</span>
-    <span class="letter">U</span>
-    <span class="letter">E</span>
-    <span class="letter">E</span>
-    <span class="letter">N</span>
-    <span class="letter">A</span>
+  <div class="name-line">
+    <span class="letter ballet">Q</span>
 
+
+    <span class="letter inter">U</span>
+    <span class="letter inter">E</span>
+    <span class="letter inter">E</span>
+    <span class="letter inter">N</span>
+    <span class="letter inter">A</span>
+
+
+
+    <span class="letter inter">L</span>
+    <span class="letter inter">E</span>
+    <span class="letter inter">E</span>
   </div>
 </body>
 </html>
-
-  </html>
